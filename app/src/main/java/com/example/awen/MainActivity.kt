@@ -1,29 +1,18 @@
 package com.example.awen
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import com.example.awen.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private var audioBtn: Button?=null
-    private var dialog: Button? = null
+
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        audioBtn = findViewById(R.id.btn_audio)
-        dialog = findViewById(R.id.btn_dialog)
-
-        audioBtn!!.setOnClickListener {
-            val intent = Intent(this, AudioActivity::class.java)
-            startActivity(intent)
-        }
-
-        dialog!!.setOnClickListener {
-            val intent = Intent(this, DialogActivity::class.java)
-            startActivity(intent)
-        }
+        binding.textView.text = "hi 你好"
     }
 }

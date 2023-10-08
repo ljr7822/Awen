@@ -7,26 +7,14 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/btn_audio"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="120dp"
-        android:text="@string/audio"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="todo app"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_dialog"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="220dp"
-        android:text="@string/dialog"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
